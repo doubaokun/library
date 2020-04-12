@@ -25,6 +25,7 @@ class CURLTest extends TestCase
 {
     public function testRedirect()
     {
+        // CURLOPT_FOLLOWLOCATION
         Runtime::enableCoroutine(SWOOLE_HOOK_CURL);
         Coroutine\run(function () {
             $url = 'https://shorturl.at/wxWX4';
